@@ -1,0 +1,40 @@
+<!-- // Slideshow - Task - (optional - animation)
+    // 5 pictures - every 2s it should change
+    // < > to go forward or backward picture
+    // hover over Slideshow must pause
+    // hover out it Slideshow must resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slideShow</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="slide.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img fade">
+        <img
+          src="https://source.unsplash.com/wgq4eit198Q/900x350"
+          onmouseover="pauseTurn()"
+          onmouseleave="resumeTurn()"
+          onmouseout="slide()"
+          id="image"
+        />
+      </div>
+      <div class="previous">
+        <a onclick="PreviousTurn()"><i class="fas fa-chevron-left"></i></a>
+      </div>
+      <div class="next">
+        <a onclick="nextTurn()"><i class="fas fa-chevron-right"> </i></a>
+      </div>
+    </div>
+    <scipt src="slide.js"></scipt>
+  </body>
+</html>
